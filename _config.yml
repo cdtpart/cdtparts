@@ -1,6 +1,6 @@
 # _config.yml
-title: My Advanced GitHub Page
-description: This is my advanced personal website.
+title: CDTPARTS
+description: CDT PARTS adalah suku cadang alternatif sepeda motor di indoensia yang memiliki kualitas yang sangat baik dan menjamin mutu dari suku cadang dari brand kami.
 url: "https://cdtpart.github.io"
 baseurl: "/cdtparts" # Hanya jika repository Anda bukan di root
 

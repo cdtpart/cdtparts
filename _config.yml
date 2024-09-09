@@ -1,8 +1,9 @@
 # _config.yml
 title: My Advanced GitHub Page
 description: This is my advanced personal website.
-url: "https://cdtpart.github.io/cdtparts/"
-baseurl: "/"
+url: "https://cdtpart.github.io"
+baseurl: "/cdtparts" # Hanya jika repository Anda bukan di root
+
 # Tema dan Kustomisasi
 theme: minima
 
@@ -43,7 +44,7 @@ defaults:
 seo:
   title: "My Advanced GitHub Page"
   description: "This is my advanced personal website."
-  url: "https://cdtpart.github.io/cdtparts/"
+  url: "https://cdtpart.github.io"
   twitter: username
   facebook:
     admins: username

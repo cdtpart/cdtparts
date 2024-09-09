@@ -44,7 +44,7 @@ defaults:
 seo:
   title: "My Advanced GitHub Page"
   description: "This is my advanced personal website."
-  url: "https://username.github.io"
+  url: "https://cdtpart.github.io/cdtparts/"
   twitter: username
   facebook:
     admins: username

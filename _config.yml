@@ -2,7 +2,7 @@
 title: My Advanced GitHub Page
 description: This is my advanced personal website.
 url: "https://cdtpart.github.io/cdtparts/"
-baseurl: "/html/home.md" # Hanya jika repository Anda bukan di root
+baseurl: "/cdtparts" # Hanya jika repository Anda bukan di root
 
 # Tema dan Kustomisasi
 theme: minima

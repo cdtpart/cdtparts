@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ site.title }} - Suku Cadang Motor Indonesia.</title>
     <meta name="description" content="{{ site.description }}" />
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> 
     <style>
       /* assets/main.css */
       body {
@@ -20,27 +20,52 @@
         background-color: #333;
         color: #fff;
         padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
       }
 
       .site-title {
-        font-size: 24px;
         text-decoration: none;
+        color: #fff;
+      }
+
+      .site-logo {
+        max-height: 40px;
+        margin-right: 10px;
+      }
+
+      .site-name {
+        font-size: 24px;
         color: #fff;
       }
 
       .site-nav ul {
         list-style: none;
         padding: 0;
+        display: flex;
+        gap: 10px;
       }
 
       .site-nav ul li {
         display: inline;
-        margin-right: 10px;
       }
 
       .site-nav ul li a {
         color: #fff;
         text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .site-nav ul li a:hover {
+        background-color: #555;
       }
 
       .hero {
@@ -81,7 +106,7 @@
   <body>
     <header class="site-header" role="banner">
       <div class="wrapper">
-        {% include logo.html %}
+        {% include partials/logo.html %}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger"></label>
@@ -94,10 +119,7 @@
       </div>
     </header>
     <div class="page-content">
-      <div class="wrapper">
-        {% include banner.html %}
-        {% include products.html %}
-      </div>
+      <div class="wrapper">{% include partials/banner.html %} {% include partials/products.html %}</div>
     </div>
     <footer class="site-footer">
       <div class="wrapper">

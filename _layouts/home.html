@@ -1,53 +1,102 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>{{ site.title }} - Suku Cadang Motor Indonesia.</title>
+
     <meta name="description" content="{{ site.description }}" />
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
+
   </head>
   <body>
+
     <header class="site-header" role="banner">
       <div class="wrapper">
-        <a class="site-title" rel="author" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+        <a class="site-title" rel="author" href="{{ site.baseurl }}/">
+
+          <img src="{{ site.baseurl }}/assets/images/logo.png" alt="{{ site.title }} Logo" class="site-logo" />
+
+          {{ site.title }}
+        </a>
+
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+
           <label for="nav-trigger"></label>
+
           <ul>
+
             <li><a href="{{ site.baseurl }}/about/">About</a></li>
+
             <li><a href="{{ site.baseurl }}/shop/">Shop</a></li>
             <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
           </ul>
+
         </nav>
+
       </div>
     </header>
+
     <div class="page-content">
+
       <div class="wrapper">
+
         <section class="hero">
+          <img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Banner" class="hero-banner" />
           <h1>Selamat Datang di {{ site.title }}</h1>
           <p>{{ site.description }}</p>
+
           <a href="{{ site.baseurl }}/shop/" class="btn">Belanja Sekarang</a>
+
         </section>
         <section class="products">
           <h2>Produk Terbaru</h2>
           <div class="product-list">
             <!-- Contoh produk -->
             <div class="product-item">
+
               <img src="{{ site.baseurl }}/assets/images/product1.jpg" alt="Produk 1" />
               <h3>Produk 1</h3>
               <p>Rp 100.000</p>
               <a href="{{ site.baseurl }}/product/1" class="btn">Beli</a>
+
             </div>
+
             <div class="product-item">
               <img src="{{ site.baseurl }}/assets/images/product2.jpg" alt="Produk 2" />
               <h3>Produk 2</h3>
               <p>Rp 200.000</p>
+
               <a href="{{ site.baseurl }}/product/2" class="btn">Beli</a>
             </div>
             <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+          </div>
+        </section>
+        <section class="categories">
+          <h2>Kategori Produk</h2>
+          <div class="category-list">
+            <div class="category-item">
+
+              <h3>Mesin</h3>
+              <a href="{{ site.baseurl }}/category/mesin" class="btn">Lihat Produk</a>
+            </div>
+
+            <div class="category-item">
+              <h3>Ban</h3>
+              <a href="{{ site.baseurl }}/category/ban" class="btn">Lihat Produk</a>
+            </div>
+            <div class="category-item">
+
+              <h3>Aksesoris</h3>
+              <a href="{{ site.baseurl }}/category/aksesoris" class="btn">Lihat Produk</a>
+            </div>
+            <!-- Tambahkan lebih banyak kategori sesuai kebutuhan -->
+
           </div>
         </section>
       </div>
